@@ -5,7 +5,7 @@ section{
     text-align: center;
 }
 img{
-    width: 25%;
+    width: 15%;
     text-align: center;
 }
 div{
@@ -27,4 +27,30 @@ input{
     padding: 10px;
     text-align: center;
     border: 10px;
+}
+.boton{
+    padding:5px;
+}
+button{
+        padding: 7px 76px;
+        border-radius: 1mm;
+        background-color: blue;
+        color: white;
+        font-family:Verdana;
+        border: 0;
+
+}
+a{
+   text-decoration: none;
+    font-family: monospace;
+    color: black;
+}
+.olvide{
+    font-size:1em;
+    border-radius: 5mm;
+    display: inline-block;
+    padding: 6px 30px;
+    margin: 20px;
+    border: 1px solid #2b29299e;
+    background-color: white;
 }
