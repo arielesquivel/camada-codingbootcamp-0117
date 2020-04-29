@@ -1,0 +1,30 @@
+body{
+    background-color: orange;
+}
+section{
+    text-align: center;
+}
+img{
+    width: 25%;
+    text-align: center;
+}
+div{
+    font-size: 1em;
+}
+.olvide{
+    padding: 20px;
+}
+.Parrafo{
+    font-size: 16px;
+    font-family:monospace;
+    padding: 20px;
+}
+.input-input{
+    text-align: -webkit-center;
+}
+input{
+     display: block;
+    padding: 10px;
+    text-align: center;
+    border: 10px;
+}
