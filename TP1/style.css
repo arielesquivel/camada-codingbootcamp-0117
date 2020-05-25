@@ -1,62 +1,266 @@
-.navegador{
-    background-color: black;
-    display: block;
-    text-align: center;
-        margin: 0px 200px;
-    
-    
+body{
+    background: linear-gradient(179deg, #55f2c9, #896ad5);
+    background-size: 400% 400%;
+
+    -webkit-animation: bodycss 4s ease infinite;
+    -moz-animation: bodycss 4s ease infinite;
+    animation: bodycss 4s ease infinite;
 }
-.navegador ul li{
+
+@-webkit-keyframes bodycss {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+@-moz-keyframes bodycss {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+@keyframes bodycss {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+.navegador{
+    text-align: center;
+}
+.navegador ul li {
     display: inline-block;
-    padding: 10px 20px;
-    color: white;
+    padding: 0px 20px 0px;
+    font-size: 1em;
+}
+.navegador ul li :hover{
+    display: inline-block;
+    padding: 0px 20px 0px;
+    font-size: 2em;
+    color: teal;
 }
 .navegador ul li a{
     text-decoration: none;
-    color:white;
-    
+    color: white;
 }
-header{
-    background-color: darkcyan;
-    color: black;
-    width: 800px;
+.navegador ul li a:hover{
+    text-decoration: none;
+    color:rgb(25, 75, 168);
+    transition: linear 1.5s;
 }
-img{
-    width: 500px;
+.pagina-principal a{
+    display: flex;
+    justify-content: center;
+    color: none;
+    text-decoration: none;
 }
-section{
-    width: 240px;
+.pagina-principal{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 1em;
 }
-.dog{
-    background-color: red;
-    color: royalblue;
+.pagina-principal:hover{
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    transition: linear 2.5s;
+    font-size: 2em;
 }
-.cat{
-    color: salmon;
-    background-color: seagreen;
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: baseline;
+    align-items: center;
 }
-.tortuga{
-    color: skyblue;
-    background-color: slategrey;
+.contenedor img{
+    width: 45%;
+    transition: linear 2.5s;  
+     align-items: center;
+     display: flex;
 }
-p{
-    color:1px solid black;
-    padding-left: 20%;
-    text-align: justify;
-    width: 400px;
-    background-color: snow;
-}
-section p{
-    background-color: steelblue;
-    width:400;
-}
-nav a{
-    text-align: center;
-    color: slateblue;
-}
-footer{
-    text-align:left;
-    padding-left: 30%;
-    background-color: slategrey;
+.contenedor img:hover{
     width: 50%;
+    transition: linear 2.5s;
+    filter: blur(20px);
+}
+.segundo-menu{
+    text-align: center;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.segundo-menu ul li {
+    display: inline-block;
+    padding: 0px 30px 0px;
+}
+.dog img{
+    width: 20%;
+    height: 30%;
+}
+.Cat img{
+    width: 20%;
+    height: 30%;
+}
+.Tortuge img{
+    width: 20%;
+}
+.adop{
+    font-size: 1em;
+    font-family: 'verdana';
+}
+.adop:hover{
+    font-size: 2em;
+    transition: linear 1.5s;
+}
+.caja-tex{
+    display: flex;
+    justify-content: center;
+}
+.caja-tex p{
+    width: 400px;
+    height: 100px;
+    text-align: center;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+}
+.foot p{
+    text-align: center;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+@media (max-width:800px){
+    body{
+    background: linear-gradient(179deg, #dff8f1, #350e99);
+    background-size: 400% 400%;
+
+    -webkit-animation: bodycss 4s ease infinite;
+    -moz-animation: bodycss 4s ease infinite;
+    animation: bodycss 4s ease infinite;
+}
+
+@-webkit-keyframes bodycss {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+@-moz-keyframes bodycss {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+@keyframes bodycss {
+    0%{background-position:0% 27%}
+    50%{background-position:100% 74%}
+    100%{background-position:0% 27%}
+}
+.navegador{
+    text-align: center;
+}
+.navegador ul li {
+    display: inline-block;
+    padding: 0px 20px 0px;
+    font-size: 1em;
+}
+.navegador ul li :hover{
+    display: inline-block;
+    padding: 0px 20px 0px;
+    font-size: 2em;
+    color: teal;
+}
+.navegador ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navegador ul li a:hover{
+    text-decoration: none;
+    color:rgb(25, 75, 168);
+    transition: linear 1.5s;
+}
+.pagina-principal a{
+    display: flex;
+    justify-content: center;
+    color: none;
+    text-decoration: none;
+}
+.pagina-principal{
+    display: flex;
+    justify-content: center;
+    color: blue;
+    font-size: 1em;
+}
+.pagina-principal:hover{
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+    transition: linear 2.5s;
+    font-size: 2em;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: baseline;
+    align-items: center;
+}
+.contenedor img{
+    transition: linear 2.5s;  
+}
+.contenedor img:hover{
+    width: 50%;
+    transition: linear 2.5s;
+    filter: blur(20px);
+}
+.segundo-menu{
+    text-align: center;
+}
+.segundo-menu ul li {
+    display: inline-block;
+    padding: 0px 30px 0px;
+}
+.dog img{
+    width: 50%;
+    align-items: center;
+    height: 30%;
+}
+.Cat img{
+    width: 50%;
+    height: 30%;
+    align-items: center;
+}
+.Tortuge img{
+     align-items: center;
+    width: 50%;
+    height: 30%;
+}
+.adop{
+    font-size: 1em;
+    font-family: 'verdana';
+}
+.adop:hover{
+    font-size: 2em;
+    transition: linear 1.5s;
+}
+.caja-tex{
+    display: flex;
+    justify-content: center;
+}
+.caja-tex p{
+    width: 400px;
+    height: 100px;
+    text-align: center;
+}
+.foot{
+    display: flex;
+    justify-content: center;
+}
+.foot p{
+    text-align: center;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
 }
