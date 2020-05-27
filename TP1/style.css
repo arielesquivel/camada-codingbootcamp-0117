@@ -82,26 +82,36 @@ body{
     transition: linear 2.5s;
     filter: blur(20px);
 }
-.segundo-menu{
-    text-align: center;
+.grid-container {
     display: flex;
-    justify-content:space-between;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-between;
     align-items: center;
+    align-content: center;
+    grid-template-areas: "area-1 area-2 area3";
 }
-.segundo-menu ul li {
-    display: inline-block;
-    padding: 0px 30px 0px;
+
+.area-1 { 
+    grid-area: area-1; 
+    text-align: center;
 }
-.dog img{
-    width: 20%;
-    height: 30%;
+.area-1 img{
+    width: 40%;
 }
-.Cat img{
-    width: 20%;
-    height: 30%;
+.area-2 { 
+    grid-area: area-2; 
+    text-align: center;}
+.area-2 img{
+    width: 30%;
 }
-.Tortuge img{
-    width: 20%;
+.area3 {
+    grid-area:area3;
+    text-align: center;
+}
+.area3 img{
+ width: 40%;
+ height: 20%;
 }
 .adop{
     font-size: 1em;
@@ -131,7 +141,7 @@ body{
     display: flex;
     justify-content: center;
 }
-@media (max-width:800px){
+@media (min-width:800px){
     body{
     background: linear-gradient(179deg, #dff8f1, #350e99);
     background-size: 400% 400%;
@@ -213,32 +223,35 @@ body{
     transition: linear 2.5s;
     filter: blur(20px);
 }
-.segundo-menu{
+.grid-container {
+  display: grid;  
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 3fr;
+  gap: 1px 1px;
+  align-items: center;
+  grid-template-areas: "area-1 area-2 area3";
+}
+.area-1 { 
+    grid-area: area-1; 
     text-align: center;
 }
-.segundo-menu ul li {
-    display: inline-block;
-    padding: 0px 30px 0px;
+.area-1 img{
+    width: 40%;
 }
-.dog img{
-    width: 50%;
-    align-items: center;
-    height: 30%;
+.area-2 { 
+    grid-area: area-2; 
+    text-align: center;}
+.area-2 img{
+    width: 30%;
 }
-.Cat img{
-    width: 50%;
-    height: 30%;
-    align-items: center;
+.area3 {
+    grid-area:area3;
+    text-align: center;
 }
-.Tortuge img{
-     align-items: center;
-    width: 50%;
-    height: 30%;
-}
-.adop{
-    font-size: 1em;
-    font-family: 'verdana';
-}
+.area3 img{
+ width: 40%;
+ height: 20%;
+} 
 .adop:hover{
     font-size: 2em;
     transition: linear 1.5s;
