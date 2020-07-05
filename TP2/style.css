@@ -54,3 +54,20 @@ a{
     border: 1px solid #2b29299e;
     background-color: white;
 }
+#sing-in{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+	align-content: center;
+}
+.img-f{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
