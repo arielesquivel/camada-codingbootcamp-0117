@@ -213,7 +213,7 @@ h2,h3{
     transition: cubic-bezier(0.785, 0.135, 0.15, 0.86)1s;
     border: 0;
     margin: 0;
-    background-color:rgba(47,200,161,0.8715861344537815);
+    background-color:rgba(28, 117, 95, 0.872);
 }
 .play:hover{
     border-radius: 60mm;
@@ -250,7 +250,7 @@ h2,h3{
 .foto6 img:hover{ width:80%;}
 
 #Creador{
-    background: rgb(81,227,123);
+    background: rgb(46, 139, 73);
     background: linear-gradient(27deg, rgba(81,227,123,1) 0%,
     rgba(47,200,161,0.8715861344537815) 53%, rgba(83,240,156,1) 100%);
     height: 300px;
@@ -259,8 +259,8 @@ h2,h3{
 .logoss{
     padding: 5px;
     display: flex;
-    flex-direction: column;
-    padding-bottom: 10px;
+    flex-direction: row;
+    justify-content: space-around;
 }
 .foo_orden{
     display: flex;
